@@ -2,7 +2,7 @@
 -- As per the coverage for sprint, the foriegn key concept will be covered in the next sprint.
 
 -- ***************** Users Table ****************************
-/*
+
 CREATE TABLE IF NOT EXISTS `Users` (
     `user_id` INT PRIMARY KEY,
     `username` VARCHAR(30),
@@ -127,6 +127,59 @@ VALUES
     (2, 2, 0);
 
 -- SELECT * FROM `Movie_Episodes`;
-*/
 
+
+-- Commands usage
+
+-- **** ALTER **** 
+
+-- ALTER TABLE `Users` ADD `last_name` VARCHAR(20);
+-- SELECT * FROM `Users`;
+-- ALTER TABLE `Users` DROP `last_name`;
+-- SELECT * FROM `Users`;
+
+-- ALTER TABLE `Users` MODIFY `user_id` VARCHAR(10);
+-- DESCRIBE `Users`;
+-- ALTER TABLE `Users` MODIFY `user_id` INT;
+-- DESCRIBE `Users`;
+
+
+-- **** DROP TABLES **** 
+
+-- CREATE TABLE `test_drop`(`id` INT);
+-- DROP TABLE `test_drop`;
+
+-- **** DROP ADD COLUMNS **** 
+
+-- ALTER TABLE `Users` ADD `last_name` VARCHAR(20);
+-- SELECT * FROM `Users`;
+-- ALTER TABLE `Users` DROP `last_name`;
+-- SELECT * FROM `Users`;
+
+-- **** WHERE **** 
+
+-- Finding all the movies which are not series i.e. no episodes but just a movie
+-- SELECT * FROM `Movie_Episodes`;
+-- SELECT * FROM `Movie_Episodes`
+-- WHERE `episode_number` = 0 AND `has_episodes` = 0;
+
+-- **** LIMIT and ORDER BY **** 
+
+-- Finding all the movies or series only no episodes and ordering by title
+
+-- SELECT * FROM `Movie_Episodes`;
+-- SELECT * FROM `Movie_Episodes`
+-- WHERE `episode_number` = 0
+-- ORDER BY `title`;
+
+-- SELECT DISTINCT * FROM `Movie_Episodes`
+-- WHERE `episode_number` = 0
+-- ORDER BY `title` LIMIT 1;
+
+-- **** JOIN **** 
+
+-- SELECT Users.user_id, Users.username
+-- FROM Users
+-- JOIN Rates ON Users.user_id = Rates.user_id    
+-- WHERE Users.`user_id` = 1;
 
