@@ -1,5 +1,5 @@
 -- These are the Sql commands to create all the required tables for the project.Stars_In
--- As per the coverage for sprint, the foriegn key concept will be covered in the next sprint.
+-- As per the coverage for sprint, the foreign key concept will be covered in the next sprint.
 
 -- ***************** Users Table ****************************
 
