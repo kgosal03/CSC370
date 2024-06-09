@@ -1,0 +1,5 @@
+﻿movie_episode_id,episode_number,title,release_year,synopsis,has_episodes
+1,0,Die Hard,2014,John McClane and a young hacker join forces to take down master cyber-terrorist in Washington D.C.,0
+2,0,Big Bang Theory,2005,A woman who moves into an apartment across the hall from two brilliant scientists.,1
+2,1,S01: Pilot,2005,Meet all the characters first time.,0
+2,2,S02: Leonard meets Penny,2005,In this Leonard meets Penny for the first time.,0

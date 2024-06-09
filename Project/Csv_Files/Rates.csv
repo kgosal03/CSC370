@@ -1,0 +1,4 @@
+﻿user_id,movie_episode_id,episode_number,rating,review,show_username
+1,1,0,5,Great Movie,TRUE
+2,2,1,4,Excellent pilot episode,FALSE
+2,2,2,5,Enjoyable show,TRUE
